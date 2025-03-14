@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eat4sats</title>
+  <link rel="icon" href="../assets/icons.png" />
+
+  <link rel="stylesheet" href="../css/canvas.css" />
+  <link rel="stylesheet" href="../css/body.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/sticky.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/overlayBasket.css" />
+
+  <link rel="stylesheet" href="../fonts/fonts/fontawesome-free-6.6.0-web/css/all.min.css" />
+
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/db.js"></script>
+  <script src="../scripts/templates.js"></script>
+  <script src="../scripts/slider.js" defer></script>
+</head>
+
+<body id="myBody" onload="init(), showMobileButton()" ;>
+  <header>
+    <div class="logo" alt="eatforsats"></div>
+    <nav class="navbar">
+      <a href="" alt="home">&#x1F6D6;</a>
+      <a href="" alt="lightning">&#x26A1;</a>
+      <a href="" alt="contact">&#x1F4DE;</a>
+    </nav>
+
+    <input type="checkbox" id="op" />
+    <label for="op" class="menu_button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+    <div class="lower"></div>
+
+    <!-- Overlay Menu -->
+
+    <div class="overlay overlay-hugeinc">
+      <label for="op"></label>
+      <nav>
+        <ul>
+          <li><a href="#">&#x1F6D6;</a></li>
+          <li><a href="#">&#x26A1;</a></li>
+          <li><a href="#">&#x1F4DE;</a></li>
+        </ul>
+      </nav>
+      <div class="logo-Overlay" alt="eatforsats"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mainDiv">
+      <!-- Slider -->
+
+      <div class="container">
+        <img class="img" onclick="openImages(0)"
+          src="../assets/slider/istockphoto-1270851693-1024x1024-1730013506-7779.png" href="#coffee" id="coffee" />
+        <img class="img" onclick="openImages(1)" src="../assets/slider/btc-beer-1730014270-5372.png" href="#beer"
+          id="beer" />
+        <img class="img" onclick="openImages(2)" src="../assets/slider/pizza-1024x1024-1730014324-6929.png" id="pizza"
+          href="#pizza" />
+        <img class="img" onclick="openImages(3)" src="../assets/slider/mineralwater-1730014346-8706.png" href="#water"
+          id="water" />
+        <img class="img" onclick="openImages(4)" src="../assets/slider/btc-burger-1730014271-3938.png" href="#burger"
+          id="burger" />
+      </div>
+
+      <div class="h1_container">
+        <h1>&#x26A1; Lightning &#8383;TC Delivery-App &#x26A1;</h1>
+      </div>
+
+      <!-- Cards & Order Button -->
+      <div id="BTCDivs"></div>
+      <div id="mobileButton"></div>
+
+    </div>
+
+    <!-- Position Sticky Wrapper -->
+
+    <aside class="basketContainer" id="stickyBasketContainer"></aside>
+
+    <!-- Basket Overlay -->
+
+    <div class="overlayBasket" id="overlayBasket"></div> 
+    
+
+    </div>
+
+    </div>
+
+    
+  
+
+  </main>
+
+  <footer>
+    <div class="logo_footer" alt="eatforsats"></div>
+    <h4>&#169; by Francisco Naranjo 2025</h4>
+  </footer>
+</body>
+
+</html>

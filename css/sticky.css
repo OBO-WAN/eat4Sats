@@ -1,0 +1,285 @@
+.displayFlex {
+  display: flex !important;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone{
+  display: none;
+}
+
+.basketContainer {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  box-shadow: lightgrey 0px 0px 3px 2px;
+  margin-left: 24px;
+  border-radius: 12px;
+}
+@media (max-width: 700px) {
+  .basketContainer {
+    display: none;
+  }
+}
+.contentBasket {
+  position: sticky;
+  top: 0; /* Reference Point to the Top, always by sticky */
+  height: 100%;
+}
+h3 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #1a1409;
+  font-family: monospace;
+  font-size: xx-large;
+  padding: 12px;
+  text-align: center;
+  animation: pulsate 1.5s infinite alternate;
+}
+
+.basketWrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  padding: 12px;
+  font-weight: bolder;
+}
+.basketProduct {
+  display: block;
+  /* justify-content: space-between; */
+  background: transparent;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+  margin-top: 24px;
+}
+
+b {
+  color: #ff5722;
+  background: transparent;
+  padding: 4px;
+}
+.spanPreis {
+  color: #14c414;
+  background: transparent;
+  padding: 12px;
+}
+
+.buttonAndAmount {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 12px;
+  color: red;
+}
+
+.b_amount {
+  color: #ff5722;
+  align-items: center;
+  font-family: Pacifico;
+  background: transparent;
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 20px;
+}
+
+.finalPriceWrapper {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  background: transparent;
+  align-items: center;
+}
+.finalPriceDiv {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  align-items: center;
+}
+
+.basketDishInfo {
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  align-items: center;
+  padding: 0 8px 0 8px;
+}
+.ShippingCostTitle {
+  display: none;
+  background: transparent;
+  font-family: "Font Awesome 5 Free";
+  font-size: medium;
+  font-weight: bolder;
+  padding: 12px;
+  color: #8f0e0e;
+  text-align: center;
+  animation: pulsate 0.5s infinite alternate;
+}
+
+.checkoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: orange;
+  height: 40px;
+  width: 50%;
+  margin: 44px;
+  font-family: monospace;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.emptyInfo {
+  display: none;
+  color: #a19f9b;
+  padding: 18px;
+  font-family: monospace;
+  font-size: large;
+  background: transparent;
+}
+.total {
+  display: block;
+  background: transparent;
+  font-family: "Font Awesome 5 Free";
+  font-size: large;
+  font-weight: bolder;
+  padding: 12px;
+  margin-top: 12px;
+  color: #373030;
+  animation: pulsate 1.5s infinite alternate;
+}
+.basketText {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+}
+.closeBasket {
+  display: flex;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.orderButton {
+  background: #ff5722;
+  width: 200px;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  border-width: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle[type="checkbox"] {
+  display: flex;
+  margin: 12px;
+  margin-bottom: 24px;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: orangered;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+}
+.toggle[type="checkbox"]::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.toggle[type="checkbox"]:checked::before {
+  transform: translateX(100%);
+  background: #fff;
+}
+
+.toggle[type="checkbox"]:checked {
+  background: #00ed64;
+}
+
+.thanks {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  padding: 30px;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.thanksH2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #212121;
+  font-family: monospace;
+  font-size: xx-large;
+  padding: 16px;
+  text-align: center;
+  animation: pulsate 1.5s infinite alternate;
+}
+
+.thanksText {
+  color: #a19f9b;
+  padding: 18px;
+  font-family: monospace;
+  font-size: large;
+  background: transparent;
+}
+.close {
+  background: gainsboro;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: #ad1a1a;
+  cursor: pointer;
+  display: flex;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 18px 34px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 30px;
+}
+
+.close:hover {
+  box-shadow: rgb(33 43 37 / 35%) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1) rotate(-4deg);
+}

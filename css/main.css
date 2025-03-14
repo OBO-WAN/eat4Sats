@@ -1,0 +1,241 @@
+/* Fonts */
+@import url(//fonts.googleapis.com/css?family=Pacifico);
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    /* margin-top: 8px; */
+    height: 100%;
+    width: 98%;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+}
+/* Slider */
+.container {
+    height: 400px;
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    box-shadow: 0px 2px 6px 6px #245726;
+    overflow: hidden;
+    margin-bottom: 24px;
+    /* aspect-ratio: 1.5 / 1; */
+}
+.container:has(.img.active) .img:not(.active){
+  filter: grayscale(100%);
+}
+img{
+  height: 100%;
+  width: calc(100% / 5);
+  border: solid;
+  object-fit: cover;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.32, 0, 0.67, 0);
+  cursor: pointer;
+}
+.active{
+  width: 200%;
+}
+.h1_container{
+  display: flex;
+  justify-content: center;
+  margin: 14px;
+  background: transparent;
+  overflow: visible;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  padding: 12px;
+  color: #696060;
+  animation: pulsate 1.5s infinite alternate; 
+  background: transparent;
+}
+
+@media (max-width: 575px){
+  h1{
+    text-align: center;
+  }
+}
+
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #bc13fe,
+      0 0 80px #bc13fe,
+      0 0 90px #bc13fe,
+      0 0 100px #bc13fe,
+      0 0 150px #bc13fe;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 10px #bc13fe,
+    0 0 45px #bc13fe,
+    0 0 55px #bc13fe,
+    0 0 70px #bc13fe,
+    0 0 80px #bc13fe;
+
+  }
+}
+
+/* Cards */
+
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-style: groove;
+    border-width: 4px;
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid #dd9e0a;
+    width: 100%;
+    height: 240px;
+    margin-top: 8px;
+    box-shadow: 0px 2px 6px 6px #b3a488;
+    background: linear-gradient(0deg, #27212D, #454291);
+    /* background-image: url("../assets/slider/btc_espresso.jpg"); */
+    /* background-size: cover; */
+
+
+}
+
+.h2Container{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    border-radius: 12px;
+    background: transparent;
+}
+
+ h2 {
+    background: transparent;
+        b {
+          font: 400 4vh "Pacifico";
+          background: transparent;
+          letter-spacing: 8px;
+          color: #fee;
+          text-shadow: 0 0px 10px, 0 0 1em #560a86, 0 0 0.5em #560a86,
+            0 0 0.1em #560a86, 0 10px 3px #333;
+          span {
+            background: transparent;
+            animation: flicker linear infinite 1.5s;
+          }
+        }
+      }
+
+      @keyframes flicker {
+        75% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        76% {
+          color: #222;
+        }
+        77% {
+          color: inherit;
+          text-shadow: none;
+        }
+        78% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        79% {
+          color: #222;
+          text-shadow: none;
+        }
+        80% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        90% {
+          color: #222;
+          text-shadow: none;
+        }
+        90.5% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+      }
+      
+      @media (max-width: 1088px){
+        h2 {
+          background: transparent;
+         
+        b {
+          font: 400 3vh "Pacifico";
+          letter-spacing: 4px;
+          background: transparent;        
+          }
+        }
+      }
+
+      @media (min-width: 1088px){
+        h2 {
+          background: transparent;
+        b {
+          font: 400 2.5vh "Pacifico";
+          letter-spacing: 4px;
+          background: transparent;
+        
+          }
+        }
+      }
+
+      .shoppingBasket{
+        background-image: url("../assets/in-den-warenkorb-legen.png");
+        height: 64px;
+        width: 64px;
+        cursor: pointer;
+      }
+
+    
+      p{
+        color: #a19f9b;
+        padding: 18px;
+        font-family: monospace;
+        font-size: large;
+        background: transparent;
+        
+      }
+
+      @media (max-width:911px){
+        p{
+          font-size: medium;
+          text-align: center;
+        }
+      }
+
+      .price{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bolder;
+        color: red;
+        background: transparent;
+      }
+
+   
