@@ -12,9 +12,6 @@ body {
 .displayBlock {
   display: block;
 }
-/* .displayNone {
-  display: none;
-} */
 .overflow {
   overflow: visible;
 }
