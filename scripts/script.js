@@ -12,6 +12,7 @@ function init() {
   renderBasketHTML();
   renderOverlayBasketHTML();
   renderBasket();
+
   document.getElementById("overlayBasket").style.display = "none";
 }
 

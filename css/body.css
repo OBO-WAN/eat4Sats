@@ -12,15 +12,9 @@ body {
 .displayBlock {
   display: block;
 }
-/* .displayNone {
-  display: none;
-} */
-.overflow {
-  overflow: visible;
-}
-.overflow {
-  overflow: hidden;
-}
+ .overflow {
+  overflow: auto;
+ }
 /* Scrollbar  */
 ::-webkit-scrollbar {
   width: 1em;
